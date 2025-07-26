@@ -1,0 +1,24 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name" id="name">
+    </div>
+    @if(contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
+        <p class="error">Name is required.</p>
+    }
+     <div>
+        <label for="email">Email:</label>
+        <input type="text" formControlName="email" id="email"/>
+    </div>
+      @if(contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
+        <p class="error">Email is required.</p>
+    }
+     <div>
+        <label for="message">Message:</label>
+        <textarea type="text" formControlName="message" id="message"></textarea>
+    </div>
+    @if(contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
+        <p class="error">Message is required.</p>
+    }
+    <button type="submit">Submit</button>
+</form>

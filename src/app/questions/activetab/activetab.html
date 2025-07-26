@@ -1,0 +1,31 @@
+<div>
+  <div>
+    <button (click)="buttonClicked(1)" 
+    [ngStyle]="{color: clickedValue === 1 ? 'blue':'black'} ">HTML</button>
+    <button (click)="buttonClicked(2)"
+    [ngStyle]="{color: clickedValue === 2 ? 'blue':'black'} ">CSS</button>
+    <button (click)="buttonClicked(3)"
+    [ngStyle]="{color: clickedValue === 3 ? 'blue':'black'} ">JavaScript</button>
+  </div>
+  <div>
+    @if(clickedValue===1){
+        <p>
+      The HyperText Markup Language or HTML is the standard
+      markup language for documents designed to be displayed
+      in a web browser.
+    </p>
+    }
+    @if(clickedValue===2){
+    <p>
+      Cascading Style Sheets is a style sheet language used
+      for describing the presentation of a document written
+      in a markup language such as HTML or XML.
+    </p>}
+    @if(clickedValue===3){
+    <p>
+      JavaScript, often abbreviated as JS, is a programming
+      language that is one of the core technologies of the
+      World Wide Web, alongside HTML and CSS.
+    </p>}
+  </div>
+</div>

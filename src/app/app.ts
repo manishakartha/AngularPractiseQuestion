@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Activetab } from './questions/activetab/activetab';
+import { DICEROLLER } from './questions/diceroller/diceroller';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [DICEROLLER],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

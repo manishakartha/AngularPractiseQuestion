@@ -1,0 +1,11 @@
+<label>Number of Dice :</label>
+<input type="number" [(ngModel)]="numberToRoll">
+<button (click)="getRandomNumber()">Roll</button>
+
+<div>
+  @for (value of values;track value) {
+    <div>{{ value }}</div>
+  } @empty {
+    <p>No items found.</p>
+  }
+</div>

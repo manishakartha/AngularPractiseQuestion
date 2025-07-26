@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  padding: 12px;
+}
+
+header {
+  background-color: tomato;
+  text-align: center;
+  height: 60px;
+}
+.container{
+    display: flex;
+    /* justify-content: ; */
+    /* flex: 1; */
+    flex-grow: 1;
+}
+nav {
+  background-color: coral;
+  width: 100px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+main {
+  background-color: moccasin;
+  flex-grow: 1;
+  text-align: center;
+}
+
+aside {
+  background-color: sandybrown;
+  width: 100px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+footer {
+  background-color: slategray;
+  height: 100px;
+  text-align: center;
+}
