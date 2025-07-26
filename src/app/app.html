@@ -1,3 +1,6 @@
 <!-- <app-counter></app-counter>
   -->
-<app-diceroller></app-diceroller>
+<app-star-rating 
+[maxstars]="5"
+[selectedStar]="3"
+  (ratingSelected)="onRatingSelected1($event)"></app-star-rating>

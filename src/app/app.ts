@@ -1,14 +1,19 @@
 import { Component, signal } from '@angular/core';
-import { Activetab } from './questions/activetab/activetab';
-import { DICEROLLER } from './questions/diceroller/diceroller';
+
+import { StarRating } from './questions/star-rating/star-rating';
 
 
 @Component({
   selector: 'app-root',
-  imports: [DICEROLLER],
+  imports: [StarRating],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('practiseQuestions');
+
+  onRatingSelected1(rating: number) {
+  console.log('Widget 1 selected:', rating);
+}
+  
 }

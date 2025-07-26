@@ -1,0 +1,12 @@
+<h1>rating</h1>
+
+<div (mouseleave)="onMouseLeave()">
+    <span *ngFor ="let star of arrayofStars;let i = index"
+    (click)="selectedStars(i)"
+    (mouseenter)="onMouseEnter(i)"
+    class="star"
+    >
+    {{isFilled(i) ? '★' : '☆'}}
+    </span>
+</div>
+
